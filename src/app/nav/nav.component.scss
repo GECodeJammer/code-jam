@@ -9,8 +9,19 @@
   box-shadow: 3px 0 6px rgba(0,0,0,.24);
 }
 
+.ge-monogram {
+  width: 50px;
+}
+
 .mat-nav-list a.active-link {
-    color: $codejam-highlight;
+  // TODO: Change to $codejam-highlight;
+    color: orange;
+}
+
+// Will get overriden by material's color="primary"
+.mat-toolbar {
+  background-color: green;
+  color: orange;
 }
 
 mat-nav-list mat-icon {

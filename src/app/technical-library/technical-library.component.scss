@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .grid-container {
   margin: 20px;
 }
@@ -16,11 +18,16 @@
   left: 15px;
   right: 15px;
   bottom: 15px;
+
+  background-color: green;
+  border-radius: 50px;
 }
 
 img {
   max-width: 100%;
   height: auto;
+
+  border-radius: 50px;
 }
 
 .container {

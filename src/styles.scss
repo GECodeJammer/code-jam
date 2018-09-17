@@ -10,7 +10,8 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
 
-$codejam-highlight: #1FC8C0;
+$codejam-highlight: orange; // TODO: Change to #1FC8C0
+$codejam-header: #3C4564;
 
 .mat-headline {
   color: $codejam-highlight;
