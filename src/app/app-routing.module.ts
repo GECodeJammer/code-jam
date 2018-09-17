@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'technical-library',
+    redirectTo: '/technical-library',
     pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: '/technical-library'
   }
 ];
 

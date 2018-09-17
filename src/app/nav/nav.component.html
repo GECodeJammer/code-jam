@@ -8,7 +8,26 @@
     [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">GE</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/technical-library">Technical Library</a>
+      <a mat-list-item routerLink="/home" routerLinkActive="active-link"><mat-icon>home</mat-icon> Home</a>
+      <!-- Tech Library Routes -->
+      <a mat-list-item routerLink="/technical-library" routerLinkActive="active-link"><mat-icon>library_books</mat-icon> Technical Library</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-1">Additive</a>
+      <!-- Aviation Routes -->
+      <a mat-list-item routerLink="/technical-library" routerLinkActive="active-link" class="child-1">Aviation</a>
+      <a mat-list-item routerLink="/technical-library" routerLinkActive="active-link" class="child-2">Commercial</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-2">Military</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-2">B&GA</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-2">Marine</a>
+      <!-- Other Routes -->
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-1">Healthcare</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-1">Lighting</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-1">Power</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-1">Renewable Energy</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-1">Transportation</a>
+      <a mat-list-item routerLink="/doesnotexist" routerLinkActive="active-link" class="child-1">BHGE</a>
+      <!-- More Routes -->
+      <a mat-list-item routerLink="/contact" routerLinkActive="active-link"><mat-icon>email</mat-icon> Contact</a>
+      <a mat-list-item routerLink="/settings" routerLinkActive="active-link"><mat-icon>settings</mat-icon> Settings</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

@@ -7,11 +7,11 @@
     <h1 class="mat-subheading-2">{{group.title}}</h1>
     <mat-grid-list [cols]="columns | async" rowHeight="250px">
       <mat-grid-tile *ngFor="let aircraft of group.aircraft">
-        <mat-card class="aircraft-card">
+        <mat-card class="aircraft-card" [routerLink]="['/technical-library', aircraft.id]">
           <mat-card-content class="aircraft-card-content container">
-            <img [src]="aircraft.imageRef" alt="GE90" class="aside">
+            <img [src]="aircraft.imageRef" alt="aircraft.title" class="aside">
             <div class="main">
-              <h4 class="mat-subheading-1">{{aircraft.title}}</h4>
+              <h4 class="mat-headline">{{aircraft.title}}</h4>
               <p class="mat-body-1">
                 {{aircraft.description}}
               </p>

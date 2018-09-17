@@ -1,3 +1,30 @@
 <div class="engine-detail-container">
-  Engine Detail
+  <h1 class="mat-h1">{{(engine$ | async)?.title}} Commercial Engine</h1>
+  <!-- <img> -->
+  <mat-card>
+    <img class="mat-card-image" src="assets/codejam.engine.png">
+  </mat-card>
+  <h1 class="mat-h1">Details</h1>
+  <p class="mat-body-1">
+    CMCs in the combustor and high-pressure turbine have twice the strength and one-third the weight of metal. The
+    compressor is designed with 3D aerodynamics and its first five stages are blisks, combined bladed-disk. The
+    combustor is lean burning for greater efficiency and 30% NOx margin to CAEP/8. The compressor and high pressure
+    turbine are made from powdered metal.
+  </p>
+  <h1 class="mat-h1">Related Components</h1>
+  <mat-grid-list cols="3" rowHeight="150px">
+    <mat-grid-tile *ngFor="let card of components">
+      <mat-card class="component-card">
+        <mat-card-content class="container">
+          <img src="assets/accessory-drive.png" alt="aircraft.title" class="aside">
+          <div class="main">
+            <h4 class="mat-headline">{{card}}</h4>
+            <p class="mat-body-1">
+              A worthy successor to the CFM56, the new LEAP engine will bring double...
+            </p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>

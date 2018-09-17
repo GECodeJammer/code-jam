@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+// import our custom theme
+@import 'codejam-theme.scss';
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+$codejam-highlight: #1FC8C0;
+
+.mat-headline {
+  color: $codejam-highlight;
+}
+
+@include angular-material-theme($codejam-app-theme);
+// // specify theme class eg: <body class="my-theme"> ... </body>
+// .codejam-theme {
+//   // use our theme with angular-material-theme mixin
+//   @include angular-material-theme($codejam-app-theme);
+// }
